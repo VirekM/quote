@@ -1,7 +1,12 @@
+<<<<<<< HEAD
+=======
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+>>>>>>> master
 {
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+<<<<<<< HEAD
     "downlevelIteration": true,
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
@@ -15,9 +20,33 @@
     "typeRoots": [
       "node_modules/@types"
     ],
+=======
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2017",
+    "module": "es2020",
+>>>>>>> master
     "lib": [
       "es2018",
       "dom"
     ]
+<<<<<<< HEAD
+=======
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+>>>>>>> master
   }
 }

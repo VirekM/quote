@@ -18,7 +18,13 @@
  * BROWSER POLYFILLS
  */
 
+<<<<<<< HEAD
 /** IE10 and IE11 requires the following for NgClass support on SVG elements */
+=======
+/**
+ * IE11 requires the following for NgClass support on SVG elements
+ */
+>>>>>>> master
 // import 'classlist.js';  // Run `npm install --save classlist.js`.
 
 /**
@@ -35,7 +41,11 @@
  * will put import in the top of bundle, so user need to create a separate file
  * in this directory (for example: zone-flags.ts), and put the following flags
  * into that file, and then add the following code before importing zone.js.
+<<<<<<< HEAD
  * import './zone-flags.ts';
+=======
+ * import './zone-flags';
+>>>>>>> master
  *
  * The flags allowed in zone-flags.ts are listed here.
  *
@@ -55,7 +65,11 @@
 /***************************************************************************************************
  * Zone JS is required by default for Angular itself.
  */
+<<<<<<< HEAD
 import 'zone.js/dist/zone';  // Included with Angular CLI.
+=======
+import 'zone.js';  // Included with Angular CLI.
+>>>>>>> master
 
 
 /***************************************************************************************************
