@@ -74,3 +74,5 @@ export class HomeComponent implements OnInit {
 
 
 }
+
+//node version:v12.14.0
