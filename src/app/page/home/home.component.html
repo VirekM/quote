@@ -1,0 +1,72 @@
+<mat-toolbar color="primary" *ngIf="isVisible === true">
+    Quote Maker
+</mat-toolbar>
+<mat-card id='htmlData'>
+    <div class="logo-container">
+        <img src="assets/silverton.png" alt="Silverton Radiators">
+    </div>
+    <div class="logo-container">
+        <img src="assets/ContactUs.PNG" alt="Contact Us">
+    </div>
+
+    <mat-card-content [formGroup]="form">
+        <div>
+            <mat-form-field appearance="fill" class="full-width">
+              <mat-label>Customer Fullname</mat-label>
+              <input matInput formControlName="customerName"  autocomplete="off">
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="fill" class="full-width">
+                <mat-label>Customer Company</mat-label>
+                <input matInput formControlName="customerCompany"  autocomplete="off">
+              </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="fill" class="full-width">
+                <mat-label>Customer Address</mat-label>
+                <textarea  matInput formControlName="customerAddress" rows="5" cols="40" autocomplete="off"></textarea>
+              </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="fill" class="half-width">
+                <mat-label>Customer Car Make and Manufacturer</mat-label>
+                <input  matInput formControlName="customerCarMake" rows="5" cols="40" autocomplete="off">
+              </mat-form-field>
+              <mat-form-field appearance="fill" class="half-width">
+                <mat-label>Customer Registration</mat-label>
+                <input  matInput formControlName="customerCarReg" rows="5" cols="40" autocomplete="off">
+              </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="fill" class="full-width">
+                <mat-label>Quote For</mat-label>
+                <textarea matInput formControlName="quotefor" rows="5" cols="40"  autocomplete="off"></textarea>
+              </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="fill" class="full-width" >
+                <mat-label>Quote Price</mat-label>
+                <input matInput formControlName="quoteprice" type="number"  autocomplete="off">
+                <span matPrefix>R&nbsp;</span>
+              </mat-form-field>
+        </div>
+        <div class="logo-container">
+            <h2 color="primary">Banking Details</h2>
+            <img src="assets/Bank.PNG" alt="Contact Us">
+        </div>
+    </mat-card-content>
+</mat-card>
+<div *ngIf="isVisible === true" class="buttons" >
+    <button  mat-raised-button (click)="onReset()" color="accent">
+        Reset
+    </button>
+    &nbsp;
+    <button mat-raised-button (click)="onDownload()" color="accent">
+        Download PDF
+    </button>
+</div>
+
+
+//node version:v12.14.0
+
