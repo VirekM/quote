@@ -1,5 +1,5 @@
 <mat-toolbar color="primary" *ngIf="isVisible === true">
-    Quote Maker
+    Estimate PDF Generator
 </mat-toolbar>
 <mat-card id='htmlData'>
     <div class="logo-container">
@@ -10,15 +10,16 @@
     </div>
 
     <mat-card-content [formGroup]="form">
+        <h2>Estimate</h2>
         <div>
             <mat-form-field appearance="fill" class="full-width">
-              <mat-label>Customer Fullname</mat-label>
+              <mat-label>Customer Name</mat-label>
               <input matInput formControlName="customerName"  autocomplete="off">
             </mat-form-field>
         </div>
         <div>
             <mat-form-field appearance="fill" class="full-width">
-                <mat-label>Customer Company</mat-label>
+                <mat-label>Company Name</mat-label>
                 <input matInput formControlName="customerCompany"  autocomplete="off">
               </mat-form-field>
         </div>
@@ -30,31 +31,38 @@
         </div>
         <div>
             <mat-form-field appearance="fill" class="half-width">
-                <mat-label>Customer Car Make and Manufacturer</mat-label>
+                <mat-label>Vehicle Make and Manufacturer</mat-label>
                 <input  matInput formControlName="customerCarMake" rows="5" cols="40" autocomplete="off">
               </mat-form-field>
               <mat-form-field appearance="fill" class="half-width">
-                <mat-label>Customer Registration</mat-label>
+                <mat-label>Registration</mat-label>
                 <input  matInput formControlName="customerCarReg" rows="5" cols="40" autocomplete="off">
               </mat-form-field>
         </div>
         <div>
             <mat-form-field appearance="fill" class="full-width">
-                <mat-label>Quote For</mat-label>
+                <mat-label>Estimate For</mat-label>
                 <textarea matInput formControlName="quotefor" rows="5" cols="40"  autocomplete="off"></textarea>
               </mat-form-field>
         </div>
         <div>
             <mat-form-field appearance="fill" class="full-width" >
-                <mat-label>Quote Price</mat-label>
+                <mat-label>Estimate Price</mat-label>
                 <input matInput formControlName="quoteprice" type="number"  autocomplete="off">
                 <span matPrefix>R&nbsp;</span>
               </mat-form-field>
         </div>
         <div class="logo-container">
             <h2 color="primary">Banking Details</h2>
-            <img src="assets/Bank.PNG" alt="Contact Us">
+            <img src="assets/Bank1.PNG" alt="Contact Us">
         </div>
+        <!-- <div>
+            <mat-form-field appearance="outline" class="white-space full-width">
+                <mat-label>Banking Details</mat-label>
+                <textarea  matInput rows="10" cols="40" autocomplete="off" class="white-space">NAME OF BANK:NEDBANK – PINETOWN&#13;&#10;ACCOUNT NO:1339424185&#13;&#10;BRANCH CODE:133926&#13;&#10;ACCOUNT NAME:SILVERTON PINETOWN&#13;&#10;YOUR REF:DOCUMENT NUMBER/COMPANY NAME 
+                </textarea>
+            </mat-form-field>
+        </div> -->
     </mat-card-content>
 </mat-card>
 <div *ngIf="isVisible === true" class="buttons" >
